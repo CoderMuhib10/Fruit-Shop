@@ -29,8 +29,81 @@
         }
     </style>
 
-   
+    <!-- custom classes for tailwind and daisyUI customization -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'bg-1': "url('images/banner1.png')",
+                        'bg-2': "url('images/banner2.png')",
+                        'bg-3': "url('images/banner3.png')",
+                        'bg-4': "url('images/banner4.png')",
+                        'our-team': "url('images/team.png')",
+                    },
+                },
+            },
+        }
+    </script>
+</head>
 
+
+<body class="font-lato">
+
+    <!-- navbar starts here  -->
+
+    <header class="max-w-screen-xl mx-auto px-5 lg:px-10">
+        <nav>
+            <!-- nav menu items for large devices  -->
+
+            <div class="navbar lg:bg-[#F85559] rounded-full mt-12 mb-12 px-4 lg:px-9 py-4 lg:py-5">
+                <div class="hidden lg:flex flex-1">
+                    <ul class="menu menu-horizontal px-1 text-white font-medium">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#deals">Hot Deals</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- nav logo -->
+
+                <div class="flex md:flex-1 lg:justify-center items-center gap-3 lg:pr-10">
+                    <img src="./images/logo.png" alt="logo" class="w-12" draggable="false">
+                    <h3 class="text-black lg:text-white text-4xl font-bold">Fruit Burst</h3>
+                </div>
+
+                <!-- nav dropdown menu for mobile devices  -->
+
+                <div class="ml-16 lg:hidden md:inline dropdown dropdown-end md:items-end">
+                    <label tabindex="0" class=" -ghost btn-circle avatar">
+                        <div class="w-10 rounded-full">
+                            <img src="./images/menu.svg" draggable="false" />
+                        </div>
+                    </label>
+                    <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content rounded-box w-52 bg-white">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#deals">Hot Deals</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- laptop-search-bar -->
+
+                <div class="lg:flex-1 hidden lg:flex lg:justify-end">
+                    <input type="text" placeholder="Search here"
+                        class=" input lg:w-[70%] input-bordered rounded-3xl relative" />
+                    <img class="m-4 absolute w-5 rounded-full" src="./images/search-icon.svg" draggable="false">
+                </div>
+
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- navbar ends here  -->
+ 
 
     </main>
 

@@ -48,18 +48,18 @@
 </head>
 
 
-<body class="font-lato">
+<body class="font-lato ">
 
     <!-- navbar starts here  -->
 
-    <header class="max-w-screen-xl mx-auto px-5 lg:px-10">
+    <header class="z-10  max-w-screen-xl mx-auto px-5 lg:px-10">
         <nav>
             <!-- nav menu items for large devices  -->
 
             <div class="navbar lg:bg-[#F85559] rounded-full mt-12 mb-12 px-4 lg:px-9 py-4 lg:py-5">
                 <div class="hidden lg:flex flex-1">
                     <ul class="menu menu-horizontal px-1 text-white font-medium">
-                        <li><a href="#home">Home</a></li>
+                        <li><a href="#">Home</a></li>
                         <li><a href="#deals">Hot Deals</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#about">About Us</a></li>
@@ -70,7 +70,7 @@
 
                 <div class="flex md:flex-1 lg:justify-center items-center gap-3 lg:pr-10">
                     <img src="./images/logo.png" alt="logo" class="w-12" draggable="false">
-                    <h3 class="text-black lg:text-white text-4xl font-bold">Fruit Burst</h3>
+                    <h3 class="text-[#121212] lg:text-white text-4xl font-bold">Fruit Burst</h3>
                 </div>
 
                 <!-- nav dropdown menu for mobile devices  -->
@@ -107,7 +107,7 @@
     <main class="max-w-screen-xl mx-auto px-5 lg:px-10">
 
         <!-- carousel starts here  -->
-        <section class="carousel w-full" id="home">
+        <section class="carousel w-full min-h-[calc(100vh-92px)]">
 
             <!-- Caraousel-1 -->
 
@@ -209,7 +209,7 @@
 
         <!-- fruit card over caraousel starts here -->
         <section
-            class="text-black hidden lg:w-[80%] lg:mx-auto  md:hidden lg:flex flex-row gap-4 p-8 rounded-lg  backdrop-blur-sm drop-shadow-lg bg-[#e9e8e855]   lg:-m-28">
+            class="text-[#121212] hidden lg:w-[80%] lg:mx-auto  md:hidden lg:flex flex-row gap-4 p-8 rounded-lg  backdrop-blur-sm drop-shadow-lg bg-[#e9e8e855]   lg:-m-28">
             <div class=" flex flex-1 flex-col  text-center items-center space-y-4 justify-center ">
                 <img src="images/fruit1.png" draggable="false">
                 <p class="hover:text-[#F85559] cursor-pointer">Grapes</p>
@@ -238,7 +238,7 @@
             <!-- deal-content  -->
             <div class="flex flex-col items-center lg:flex-row ">
                 <div class="flex-1 space-y-4 text-center lg:text-left">
-                    <h2 class="font-bold text-3xl lg:text-5xl text-black">Deal of the day</h2>
+                    <h2 class="font-bold text-3xl lg:text-5xl text-[#121212]">Deal of the day</h2>
                     <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
                         literature
                         from 45 BC,
@@ -249,7 +249,7 @@
                     <div class="grid grid-flow-col gap-2 md:gap-5 text-center auto-cols-max">
                         <div class="flex flex-col">
                             <div class="flex items-center">
-                                <span class="countdown font-lato text-black text-5xl">
+                                <span class="countdown font-lato text-[#121212] text-5xl">
                                     <span style="--value:29;"></span>
                                 </span>
                                 <img class="pl-5" src="./images/dots.svg" draggable="false">
@@ -258,7 +258,7 @@
                         </div>
                         <div class="flex flex-col">
                             <div class="flex items-center">
-                                <span class="countdown font-lato text-5xl text-black">
+                                <span class="countdown font-lato text-5xl text-[#121212]">
                                     <span style="--value:10;"></span>
                                 </span>
                                 <img class="pl-5" src="./images/dots.svg" draggable="false">
@@ -267,7 +267,7 @@
                         </div>
                         <div class="flex flex-col">
                             <div class="flex items-center">
-                                <span class="countdown text-black font-lato text-5xl">
+                                <span class="countdown text-[#121212] font-lato text-5xl">
                                     <span style="--value:25;"></span>
                                 </span>
                                 <img class="pl-5" src="./images/dots.svg" draggable="false">
@@ -276,7 +276,7 @@
                         </div>
                         <div class="flex flex-col">
                             <div class="flex items-center">
-                                <span class="countdown font-lato text-black text-5xl">
+                                <span class="countdown font-lato text-[#121212] text-5xl">
                                     <span style="--value:08;"></span>
                                 </span>
                             </div>
@@ -584,7 +584,98 @@
         </section>
         <!-- deal of the day section ends here  -->
 
-    
+        <!-- Our team section starts here -->
+
+        <section class="mt-14 hero min-h-screen bg-our-team rounded-lg " id="team">
+
+            <div class="hero-overlay bg-opacity-60 rounded-md"></div>
+            <div class="hero-content text-center text-neutral-content rounded-md">
+                <div class="max-w-3xl">
+                    <h1 class="mb-5 text-3xl md:text-5xl font-bold text-white">
+                        Meet Our team
+                    </h1>
+
+                    <p class="mb-5 px-3 md:px-20">
+                        Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                        Latin literature from 45 BC, making it over 2000 years old.
+                    </p>
+                    <!-- member-1 starts here-->
+                    <div class="max-w-3xl">
+                        <div class="flex flex-col md:flex-row justify-between ">
+                            <div class="flex flex-col items-center">
+                                <img class="w-36" src="./images/member1.png" draggable="false">
+                                <h3 class="text-xl font-extrabold mt-6">Awlad Hossain</h3>
+                                <p class="mt-2 mb-2">Fruits Expert</p>
+                                <div class="flex gap-2 mb-2">
+                                    <a href="https://www.facebook.com"><img class="w-5" src="./images/facebook 1.svg"
+                                            alt="facebook" draggable="false"></a>
+                                    <a href="https://twitter.com/"><img class="w-5" src="./images/twitter (1) 1.svg"
+                                            alt="twitter" draggable="false"></a>
+                                    <a href="https://www.linkedin.com/"> <img class="w-5" src="./images/linkedin 1.svg"
+                                            alt="linkedin" draggable="false"></a>
+                                </div>
+                            </div>
+                            <!-- member-1 ends here  -->
+
+                            <!-- member-2 starts here -->
+                            <div class="flex flex-col md:flex-row">
+                                <div class="flex flex-col items-center">
+                                    <img class="w-36" src="images/member2.png" alt="member2" draggable="false">
+                                    <h3 class="text-xl font-extrabold mt-6">Safia Chowdhury</h3>
+                                    <p class="mt-2 mb-2">Fruits Expert</p>
+                                    <div class="flex gap-2 mb-2">
+                                        <a href="https://www.facebook.com"> <img class="w-5"
+                                                src="./images/facebook 1.svg" alt="facebook" draggable="false"></a>
+                                        <a href="https://twitter.com/"> <img class="w-5"
+                                                src="./images/twitter (1) 1.svg" alt="twitter" draggable="false"></a>
+                                        <a href="https://www.linkedin.com/"><img class="w-5"
+                                                src="./images/linkedin 1.svg" alt="linkedin" draggable="false"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- member-2 ends here -->
+
+                            <!-- member-3 starts here -->
+                            <div class="flex flex-col md:flex-row">
+                                <div class="flex flex-col items-center">
+                                    <img class="w-36" src="images/member3.png" alt="member3" draggable="false">
+                                    <h3 class="text-xl font-extrabold mt-6">Rokib Hossain</h3>
+                                    <p class="mt-2 mb-2">Fruits Expert</p>
+                                    <div class="flex gap-2 mb-2">
+                                        <a href="https://www.facebook.com"> <img class="w-5"
+                                                src="./images/facebook 1.svg" alt="facebook" draggable="false"></a>
+                                        <a href="https://twitter.com/"> <img class="w-5"
+                                                src="./images/twitter (1) 1.svg" alt="twitter" draggable="false"></a>
+                                        <a href="https://www.linkedin.com/"> <img class="w-5"
+                                                src="./images/linkedin 1.svg" alt="linkedin" draggable="false"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- member-3 ends here -->
+
+                            <!-- member-4 starts here -->
+                            <div class="flex flex-col md:flex-row">
+                                <div class="flex flex-col items-center">
+                                    <img class="w-36" src="images/member4.png" alt="member4" draggable="false">
+                                    <h3 class="text-xl font-extrabold mt-6">Chaity</h3>
+                                    <p class="mt-2 mb-2">Fruits Expert</p>
+                                    <div class="flex gap-2 mb-2">
+                                        <a href="https://https://www.facebook.com"><img class="w-5"
+                                                src="./images/facebook 1.svg" alt="facebook" draggable="false"></a>
+                                        <a href="https://twitter.com/"> <img class="w-5"
+                                                src="./images/twitter (1) 1.svg" alt="twitter" draggable="false"></a>
+                                        <a href="https://www.linkedin.com/"> <img class="w-5"
+                                                src="./images/linkedin 1.svg" alt="linkedin" draggable="false"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- member-4 ends here -->
+                        </div>
+                    </div>
+        </section>
+
+        <!-- Our team section ends here -->
+ 
 
 
 
